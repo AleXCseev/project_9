@@ -1,0 +1,56 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
+*:focus-visible {
+	outline: none;
+}
+
+p {
+	width: 100%;
+}
+
+a, button {
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: normal;
+	background: #0A1727;
+}
+
+.site__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	overflow: hidden;
+	margin: auto;
+}
+
+.container {
+	width: 1140px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
