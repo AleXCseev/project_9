@@ -13,7 +13,6 @@ const styleFiles = [
 	"./src/css/first-section.scss",
 	"./src/css/second-section.scss",
 	"./src/css/footer.scss",
-	"./src/css/modal.scss",
 	"./src/css/adaptive.scss",
 ];
 
