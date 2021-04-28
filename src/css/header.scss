@@ -40,6 +40,28 @@
 	position: absolute;
 	top: 300px;
 	left: 0;
+	animation: swing 8s infinite;
+}
+
+@keyframes swing {
+	5% {
+		transform: translateX(10px) translateY(-10px);
+	}
+	10% {
+		transform: translateX(-10px) translateY(10px);
+	}
+	20% {
+		transform: translateX(6px) translateY(-6px);
+	}
+	25% {
+		transform: translateX(-6px) translateY(6px);
+	}
+	35% {
+		transform: translateX(3px) translateY(-3px);
+	}
+	40% {
+		transform: translateX(0);
+	}
 }
 
 .header__man {
@@ -52,6 +74,7 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
+	border: 1px solid #FFE040;
 	background: rgba(255, 0, 76, 0.5);
 	position: absolute;
 	top: 336px;
@@ -59,13 +82,39 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	animation: sale 10s infinite;
+	color: #fff;
 	span {
 		font-family: "Bebas Neue";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 48px;
 		line-height: 48px;
-		color: #FFFFFF;
+		color: inherit;
+		animation: text 3s infinite;
+	}
+}
+
+@keyframes sale {
+	0% {
+		background: rgba(255, 0, 76, 0.1);
+		color: #FFE040;
+	}
+	50% {
+		background: rgba(255, 0, 76, 1);
+		border: 1px solid rgba(255, 0, 76, 1);
+		color: #fff;
+	}
+	100% {
+		background: rgba(255, 0, 76, 0.1);
+		color: #FFE040;
+	}
+}
+
+@keyframes text {
+	50% {
+		//font-size: 54px;
+		transform: scale(1.1);
 	}
 }
 

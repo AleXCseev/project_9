@@ -11,6 +11,8 @@ $(function () {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 540,
@@ -31,6 +33,8 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 540,
@@ -49,6 +53,8 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 1440,
