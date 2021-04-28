@@ -5,7 +5,8 @@
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
-	height: 3164px;
+	//height: 3164px;
+	padding-bottom: 200px;
 	position: relative;
 	z-index: auto;
 }
@@ -75,6 +76,10 @@
 
 .card__logo {
 	margin-bottom: 10px;
+}
+
+.card__logo-white {
+	display: none;
 }
 
 .card__main-foto {
@@ -387,12 +392,12 @@
 
 .slider__section {
 	width: 100%;
-	height: auto;
+	height: 1011px;
 	background-image: url("../img/slider-bg.png");
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
-	margin-top: -650px;
+	margin-top: -500px;
 	position: relative;
 	z-index: 10;
 	padding-top: 381px;
@@ -402,6 +407,10 @@
 	width: 1920px;
 	height: 630px;
 	margin: auto;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	.slick-dots {
 		margin: 0;
 		left: 50%;
@@ -440,7 +449,7 @@
 .review__section {
 	width: 100%;
 	padding-bottom: 120px;
-	padding-top: 140px;
+	padding-top: 100px;
 	position: relative;
 }
 

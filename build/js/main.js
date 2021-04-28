@@ -11,6 +11,17 @@ $(function () {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		dots: true,
+		responsive: [
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+		],
 	});
 
 	$(".slider").slick({
@@ -20,6 +31,17 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		responsive: [
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+		],
 	});
 
 	$(".review__wrapper").slick({
@@ -27,14 +49,34 @@ $(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: true,
+		responsive: [
+			{
+				breakpoint: 1440,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 880,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+		],
 	});
 
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		if ($(document).width() <= 600) {
-			fixedOffset = 700;
-		}
+		// if ($(document).width() <= 600) {
+		// 	fixedOffset = 700;
+		// }
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
