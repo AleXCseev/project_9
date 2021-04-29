@@ -7,9 +7,9 @@ const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 
 const styleFiles = [
+	"./src/css/fonts.scss",
 	"./src/css/main.scss",
 	"./src/css/header.scss",
-	"./src/css/fonts.scss",
 	"./src/css/first-section.scss",
 	"./src/css/second-section.scss",
 	"./src/css/footer.scss",

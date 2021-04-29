@@ -1,9 +1,17 @@
 $(function () {
-	AOS.init();
-
-	$('[data-fancybox]').fancybox({
-		loop: true,
+	AOS.init({
+		disable : "phone"
 	});
+
+	lightbox.option({
+		'alwaysShowNavOnTouchDevices': true,
+		'wrapAround': true,
+		'disableScrolling': true,
+	})
+
+	// $('[data-fancybox]').fancybox({
+	// 	loop: true,
+	// });
 
 
 	$(".info__slider").slick({
@@ -57,7 +65,7 @@ $(function () {
 		autoplaySpeed: 4000,
 		responsive: [
 			{
-				breakpoint: 1440,
+				breakpoint: 1441,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
@@ -80,6 +88,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
+		if ($(document).width() <= 380) {
+			fixedOffset = 100;
+		}
 		if ($(document).width() <= 320) {
 			fixedOffset = 180;
 		}

@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1680px) {
 	.header__dots-1 {
-		left: 0px;
-		top: 60px;
+		left: -120px;
+		top: 0px;
 	}
 	.info__dots-1 {
 		left: -130px;
@@ -87,7 +87,7 @@
 	}
 	.card__header-right {
 		.price {
-			width: 250px;
+			width: 270px;
 			flex-direction: row;
 			justify-content: space-between;
 		}
@@ -145,7 +145,7 @@
 	}
 	.footer__dots-1 {
 		left: -150px;
-		bottom: 0px;
+		bottom: 0;
 	}
 	.footer__dots-2 {
 		right: -75px;
@@ -267,11 +267,27 @@
 	}
 	.footer__wrapper {
 		.sale {
-			top: auto;
 			left: auto;
-			right: 0px;
+			right: 0;
 			top: 250px;
 		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 1024px) {
+	.header__price {
+		width: 580px;
+	}
+	.video__title {
+		font-size: 32px;
+		width: 260px;
+	}
+	.footer__boot {
+		top: 230px;
+	}
+	.footer__wrapper .sale {
+		top: 340px;
 	}
 }
 
@@ -316,7 +332,7 @@
 	}
 	.video__title {
 		font-size: 32px;
-		margin-top: 0px;
+		margin-top: 0;
 		width: 260px;
 		margin-bottom: 20px;
 		text-align: center;
@@ -399,20 +415,29 @@
 		height: 450px;
 	}
 	.card__fotos {
-		margin-bottom: 700px;
+		margin-bottom: 0px;
 	}
 	.card__right {
-		position: absolute;
-		height: 700px;
+		height: auto;
 		margin: auto;
-		left: 50%;
-		top: 805px;
-		transform: translateX(-50%);
+		padding-bottom: 0;
+		//left: 50%;
+		//top: 805px;
+		//transform: translateX(-50%);
 	}
 	.card__sale {
+		//color: #fff;
+		//width: 100%;
+		//text-align: center;
+		//margin-bottom: 30px;
+		display: none;
+	}
+	.card__sale-mobile {
+		display: block;
 		color: #fff;
 		width: 100%;
 		text-align: center;
+		margin-top: 30px;
 		margin-bottom: 30px;
 	}
 	.sprey__card {
@@ -450,8 +475,8 @@
 	}
 	.footer__boot {
 		width: 600px;
-		top: 0px;
-		right: 0px;
+		top: 0;
+		right: 0;
 	}
 	.footer__wrapper .sale {
 		right: auto;
@@ -468,7 +493,7 @@
 			width: 311px;
 			flex-direction: row;
 			justify-content: space-between;
-			align-items: flex-end;
+			align-items: baseline;
 		}
 		.header__order-btn {
 			margin: auto;
@@ -507,14 +532,14 @@
 	.card__main-foto {
 		height: 335px;
 	}
-	.card__right {
-		position: absolute;
-		height: 700px;
-		margin: auto;
-		left: 50%;
-		top: 690px;
-		transform: translateX(-50%);
-	}
+	//.card__right {
+	//	position: absolute;
+	//	height: 700px;
+	//	margin: auto;
+	//	left: 50%;
+	//	top: 690px;
+	//	transform: translateX(-50%);
+	//}
 	.card__sale {
 		font-size: 26px;
 	}
@@ -570,11 +595,11 @@
 	}
 	.footer__boot {
 		width: 410px;
-		top: 0px;
-		right: 0px;
+		top: 0;
+		right: 0;
 	}
 	.footer__wrapper .sale {
-		right: 0px;
+		right: 0;
 		left: auto;
 		top: 240px;
 	}
@@ -754,14 +779,14 @@
 	.card__main-foto {
 		height: 267px;
 	}
-	.card__right {
-		position: absolute;
-		height: 700px;
-		margin: auto;
-		left: 50%;
-		top: 620px;
-		transform: translateX(-50%);
-	}
+	//.card__right {
+	//	position: absolute;
+	//	height: 700px;
+	//	margin: auto;
+	//	left: 50%;
+	//	top: 620px;
+	//	transform: translateX(-50%);
+	//}
 	.card__sale {
 		font-size: 24px;
 		line-height: 24px;
@@ -843,12 +868,17 @@
 	}
 	.header__man {
 		width: 195px;
-		right: 0px;
+		right: 0;
 		top: 54px;
 	}
 	.header__price {
 		width: 100%;
 		justify-content: flex-start;
+	}
+	.header__price .price {
+		.new__price {
+			font-size: 56px;
+		}
 	}
 	.header__order-btn {
 		margin: auto;
@@ -968,15 +998,23 @@
 		min-width: 384px;
 		height: 337px;
 		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	.review__autor {
 		flex-wrap: nowrap;
 		align-items: center;
+		justify-content: flex-end;
 		height: auto;
 	}
 	.review__foto {
 		margin: 0;
 		margin-bottom: 20px;
+	}
+	.review__text {
+		text-align: center;
 	}
 	.review__autor-name {
 		text-align: center;
@@ -993,8 +1031,13 @@
 	}
 	.footer__boot {
 		width: 400px;
-		top: 0px;
+		top: 0;
 		right: -10px;
+	}
+	.footer__price .price {
+		.new__price {
+			font-size: 56px;
+		}
 	}
 }
 
@@ -1054,7 +1097,7 @@
 	}
 	.footer__boot {
 		width: 360px;
-		top: 0px;
+		top: 0;
 		right: -10px;
 	}
 	.footer__title {
@@ -1072,7 +1115,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 375px) {
 	.container {
-		width: 310px;
+		width: 330px;
 	}
 	.header__logo {
 		margin-bottom: 300px;
@@ -1091,7 +1134,7 @@
 	}
 	.header__man {
 		width: 150px;
-		right: 0px;
+		right: 0;
 		top: 70px;
 	}
 	.header__price {
@@ -1131,7 +1174,7 @@
 		height: 440px;
 	}
 	.info__slide {
-		width: 310px;
+		width: 330px;
 		height: 440px;
 	}
 	.info__slide-img {
@@ -1170,20 +1213,20 @@
 	.card__size-btn {
 		margin-bottom: 10px;
 	}
-	.card__fotos {
-		margin-bottom: 750px;
-	}
+	//.card__fotos {
+	//	margin-bottom: 750px;
+	//}
 	.card__main-foto {
 		height: 207px;
 	}
-	.card__right {
-		position: absolute;
-		height: 700px;
-		margin: auto;
-		left: 50%;
-		top: 560px;
-		transform: translateX(-50%);
-	}
+	//.card__right {
+	//	position: absolute;
+	//	height: 700px;
+	//	margin: auto;
+	//	left: 50%;
+	//	top: 560px;
+	//	transform: translateX(-50%);
+	//}
 	.sprey__card {
 		.card__left {
 			height: 380px;
@@ -1211,7 +1254,7 @@
 		}
 	}
 	.slide {
-		width: 310px;
+		width: 330px;
 		height: 440px;
 	}
 	.slide-img {
@@ -1328,14 +1371,14 @@
 	}
 	.footer__dots-1 {
 		left: -180px;
-		bottom: 0px;
+		bottom: 0;
 	}
 	.footer__dots-2 {
 		right: -90px;
 		bottom: 80px;
 	}
 	.footer__wrapper .sale {
-		right: 0px;
+		right: 0;
 		left: auto;
 		top: 220px;
 	}
