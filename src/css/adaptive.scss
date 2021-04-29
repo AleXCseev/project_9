@@ -288,6 +288,11 @@
 			margin-bottom: 10px;
 		}
 	}
+	.header__title {
+		width: 450px;
+		font-size: 48px;
+		margin-bottom: 10px;
+	}
 	.header__boot {
 		width: 550px;
 		top: 380px;
@@ -312,7 +317,7 @@
 	.video__title {
 		font-size: 32px;
 		margin-top: 0px;
-		width: 180px;
+		width: 260px;
 		margin-bottom: 20px;
 		text-align: center;
 		span{
@@ -510,6 +515,9 @@
 		top: 690px;
 		transform: translateX(-50%);
 	}
+	.card__sale {
+		font-size: 26px;
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -630,7 +638,7 @@
 		align-items: center;
 	}
 	.advantage__logo {
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 		width: 100px;
 		height: 100px;
 	}
@@ -666,10 +674,11 @@
 	}
 	.advantage__title {
 		text-align: center;
+		font-size: 26px;
 	}
 	.advantage__text {
-		font-size: 18px;
-		line-height: 30px;
+		font-size: 16px;
+		line-height: 22px;
 		text-align: center;
 	}
 	.advantage__man {
@@ -703,10 +712,10 @@
 	}
 	.info__dots-1 {
 		top: 1100px;
-		left: -75px;
+		left: -90px;
 	}
 	.info__dots-2 {
-		right: -75px;
+		right: -90px;
 		top: 380px;
 		bottom: auto;
 		transform: rotate(90deg);
@@ -818,6 +827,9 @@
 		top: 170px;
 		left: -30px;
 	}
+	.header__title {
+		font-size: 38px;
+	}
 	.header__dots {
 		width: 250px;
 	}
@@ -856,9 +868,11 @@
 	}
 	.video__info-text {
 		text-align: center;
+		font-size: 16px;
+		line-height: 150%;
 	}
 	.video__dots {
-		top: 1730px;
+		top: 1600px;
 	}
 	.advantage__man {
 		width: 800px;
@@ -869,6 +883,10 @@
 		width: 300px;
 		font-size: 48px;
 		line-height: 48px;
+	}
+	.information__title {
+		width: 250px;
+		text-align: center;
 	}
 	.info__slider-wrapper {
 		width: 100%;
@@ -884,6 +902,13 @@
 	}
 	.info__slide-img {
 		width: 100%;
+	}
+	.card__section-title {
+		font-size: 34px;
+		line-height: 140%;
+	}
+	.card__sale {
+		padding: 0 10px;
 	}
 	.sprey__card {
 		.card__left {
@@ -962,6 +987,10 @@
 	.footer__logo {
 		margin-bottom: 270px;
 	}
+	.footer__title {
+		font-size: 48px;
+		line-height: 120%;
+	}
 	.footer__boot {
 		width: 400px;
 		top: 0px;
@@ -975,7 +1004,7 @@
 		width: 360px;
 	}
 	.header__title {
-		font-size: 56px;
+		font-size: 38px;
 	}
 	.card__right {
 		width: 100%;
@@ -1219,7 +1248,7 @@
 	}
 	.footer__title {
 		width: 240px;
-		font-size: 42px;
+		font-size: 37px;
 		line-height: 120%;
 	}
 	.footer__price {
@@ -1239,7 +1268,7 @@
 	}
 	.video__title {
 		font-size: 28px;
-		width: 160px;
+		width: 200px;
 		span {
 			font-size: 54px;
 		}

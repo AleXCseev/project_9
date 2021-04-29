@@ -80,9 +80,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		// if ($(document).width() <= 600) {
-		// 	fixedOffset = 700;
-		// }
+		if ($(document).width() <= 320) {
+			fixedOffset = 180;
+		}
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);

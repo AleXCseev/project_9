@@ -106,7 +106,7 @@ body {
 
 .header__boot {
   position: absolute;
-  top: 300px;
+  top: 280px;
   left: 0;
   -webkit-animation: swing 8s infinite;
   animation: swing 8s infinite;
@@ -179,7 +179,7 @@ body {
   border: 1px solid #FFE040;
   background: rgba(255, 0, 76, 0.5);
   position: absolute;
-  top: 336px;
+  top: 315px;
   left: 150px;
   display: -webkit-flex;
   display: flex;
@@ -254,14 +254,14 @@ body {
 }
 
 .header__title {
-  width: 450px;
+  width: 600px;
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 54px;
+  line-height: 100%;
   color: #FDFDFD;
-  margin-bottom: 21px;
+  margin-bottom: 40px;
 }
 
 .header__year {
@@ -436,11 +436,11 @@ body {
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 100%;
   text-align: right;
   color: #FFFFFF;
-  width: 233px;
+  width: 260px;
 }
 
 .video__title span {
@@ -570,7 +570,7 @@ body {
   font-family: Bebas Neue;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 30px;
   color: #FFA640;
   margin-bottom: 10px;
@@ -580,8 +580,8 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -672,8 +672,8 @@ body {
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 84px;
+  line-height: 100%;
   color: #FFE040;
   margin-bottom: 10px;
 }
@@ -686,8 +686,8 @@ body {
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 26px;
+  line-height: 100%;
   color: #FFA640;
   margin-bottom: 10px;
 }
@@ -696,8 +696,8 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -1388,8 +1388,8 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 22px;
   color: #0A1727;
 }
 
@@ -1975,6 +1975,11 @@ body {
   .header__price .price {
     margin-bottom: 10px;
   }
+  .header__title {
+    width: 450px;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
   .header__boot {
     width: 550px;
     top: 380px;
@@ -1999,7 +2004,7 @@ body {
   .video__title {
     font-size: 32px;
     margin-top: 0px;
-    width: 180px;
+    width: 260px;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -2213,6 +2218,9 @@ body {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  .card__sale {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 660px) {
@@ -2331,7 +2339,7 @@ body {
     align-items: center;
   }
   .advantage__logo {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 100px;
     height: 100px;
   }
@@ -2363,10 +2371,11 @@ body {
   }
   .advantage__title {
     text-align: center;
+    font-size: 26px;
   }
   .advantage__text {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
   }
   .advantage__man {
@@ -2407,10 +2416,10 @@ body {
   }
   .info__dots-1 {
     top: 1100px;
-    left: -75px;
+    left: -90px;
   }
   .info__dots-2 {
-    right: -75px;
+    right: -90px;
     top: 380px;
     bottom: auto;
     -webkit-transform: rotate(90deg);
@@ -2524,6 +2533,9 @@ body {
     top: 170px;
     left: -30px;
   }
+  .header__title {
+    font-size: 38px;
+  }
   .header__dots {
     width: 250px;
   }
@@ -2563,9 +2575,11 @@ body {
   }
   .video__info-text {
     text-align: center;
+    font-size: 16px;
+    line-height: 150%;
   }
   .video__dots {
-    top: 1730px;
+    top: 1600px;
   }
   .advantage__man {
     width: 800px;
@@ -2576,6 +2590,10 @@ body {
     width: 300px;
     font-size: 48px;
     line-height: 48px;
+  }
+  .information__title {
+    width: 250px;
+    text-align: center;
   }
   .info__slider-wrapper {
     width: 100%;
@@ -2591,6 +2609,13 @@ body {
   }
   .info__slide-img {
     width: 100%;
+  }
+  .card__section-title {
+    font-size: 34px;
+    line-height: 140%;
+  }
+  .card__sale {
+    padding: 0 10px;
   }
   .sprey__card .card__left {
     width: 100%;
@@ -2673,6 +2698,10 @@ body {
   .footer__logo {
     margin-bottom: 270px;
   }
+  .footer__title {
+    font-size: 48px;
+    line-height: 120%;
+  }
   .footer__boot {
     width: 400px;
     top: 0px;
@@ -2685,7 +2714,7 @@ body {
     width: 360px;
   }
   .header__title {
-    font-size: 56px;
+    font-size: 38px;
   }
   .card__right {
     width: 100%;
@@ -2934,7 +2963,7 @@ body {
   }
   .footer__title {
     width: 240px;
-    font-size: 42px;
+    font-size: 37px;
     line-height: 120%;
   }
   .footer__price .price {
@@ -2951,7 +2980,7 @@ body {
   }
   .video__title {
     font-size: 28px;
-    width: 160px;
+    width: 200px;
   }
   .video__title span {
     font-size: 54px;
