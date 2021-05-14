@@ -1,6 +1,7 @@
 $(function () {
 	AOS.init({
-		disable : "phone"
+		disable : "phone",
+		offset : -100,
 	});
 
 	lightbox.option({
@@ -36,9 +37,9 @@ $(function () {
 
 	$(".slider").slick({
 		infinite: true,
-		centerMode: true,
-		variableWidth: true,
-		slidesToShow: 3,
+		// centerMode: true,
+		// variableWidth: true,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: true,
 		autoplay: true,
